@@ -7,7 +7,7 @@ function Project(props) {
             <img src={props.image} alt='company logo'  className='company-logo'/>
         </div>
         <div className='job-text'> 
-            <div className='company-name'> {props.title} </div>
+            <div className='project-name'> {props.title} </div>
             <div className='year-and-stacks-container'>
                 <div className='year'>  {props.year} </div>
                 <div className='stacks'>  {props.stacks}</div>
