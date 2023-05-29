@@ -1,0 +1,26 @@
+[
+    {
+      "school_name": "yale-nus-college",
+      "college_logo": "../collegelogos/yale-nus-logo.png",
+      "degree": "Bachelor of Science (Honours) in Mathematical, Computational and Statistical Sciences",
+      "activities": "Peer Tutor for Introduction to Computer Science, Yale-NUS College Muslim Students Association, Copresident Yale-NUS Hacks, Yale-NUS College Fitness Student Associate, Lead Student Data Archivist",
+      "skills": "Programming, Problem solving, algorithm development, full stack development, operating systems and interfaces, artificial intelligence, machine learning, linear algebra, programming for data science, data analysis, literature and humanities, philosophy, scientific writing, quantitative reasoning, modern social thought, comparative socilogy, leadership and management.",
+      "duration": "Aug 2021 - May 2025",
+      "country_flag": "./flags/sg.png",
+      "country": "Singapore",
+      "timetaken": "2 years 3 months"
+    },
+    {
+      "school_name": "aitchison-college",
+      "college_logo": "./collegelogos/aitchison.png",
+      "degree": "Cambridge International O and A Levels",
+      "activities": "Senior School Prefect, Ghazi House Captian, General secretary Mathematics Society, Executive Council Member Geograpghy Society, Event head at Aitchison College Science and Engineering Concept, Director Finance at Aitchison College Model United Nations Conference, Represented school at interschool Math and Science Olympaids.",
+      "skills": "Physics, Mathematics, Computer Science, English language, Urdu Literature, Advanced/Further Mathematics",
+      "duration": "Aug 2014 - Aug 2020",
+      "country_flag": "./flags/Pakistan.png",
+      "country": "Pakistan",
+      "timetaken": "6 years"
+    }
+]
+     
+  

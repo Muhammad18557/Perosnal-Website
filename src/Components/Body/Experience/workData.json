@@ -1,0 +1,35 @@
+[
+    {
+      "company_name": "Yale-NUS College",
+      "role": "Summer Research Assistant",
+      "description": "Improved functions of scobra python package under Prof. Maurice Cheung using Object Oriented Programming fundamentals.",
+      "skills": "Python, GitHub, Object Oriented Programming, Data Analysis, Data Visualization, Scientific Writing",
+      "duration": "May 2022 - Aug 2022",
+      "place": "Singapore"
+    }, 
+    {
+        "company_name": "YNC_Hacks",
+        "role": "Copresident",
+        "description": "Implemented semester-long software and hardware workshops and projects catering to different skill levels, increasing active membership by 200%.",
+        "skills": "Python, Probelm solving, Leardership, Teamwork, Communication, Event Management",
+        "duration": "Jan 2022 - Aug 2023",
+        "place": "Singapore"
+    }, 
+    {
+      "company_name": "Yale-NUS College",
+      "role": "Peer Tutor for Introduction to Computer Science",
+      "description": "Conducted weekly tutoring sessions for 20+ students, increasing their grades by 20%.",
+      "skills": "Teaching, Communication, Problem Solving, Functional Language",
+      "duration": "Jan 2023 - May 2023",
+      "place": "Singapore"
+  }, 
+  {
+      "company_name": "National University of Singapore",
+      "role": "Lead Student Data Archivist",
+      "description": "Lead the pre-processing, digitisation, and archiving of 1000+ college events and item records, increasing the efficiency of the archiving process by 50%.",
+      "skills": "Leardership, Teamwork, Communication, Time Management",
+      "duration": "Jan 2022 - Aug 2023",
+      "place": "Singapore"
+  } 
+
+]

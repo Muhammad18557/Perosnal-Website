@@ -1,0 +1,224 @@
+.footer-container {
+ padding: 2%;
+ background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+ background-color: #242424;
+ background-image: url('./footer-pics/final-background.png')
+}
+
+.contact-me {
+    /* border: 1px solid red; */
+
+}
+.heading-contact {
+    color: #fff;
+    font-size: 1.7rem;
+    text-align: center;
+    margin-bottom: 2rem;
+
+
+}
+
+.contact-description {
+    color: #fff;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.contact-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+
+  }
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.message-required {
+    width: 55vw;
+    height: auto; /* Change height to auto to allow for variable height */
+    min-height: 10vh; /* Set a minimum height for the input field */
+    border: none;
+    border-radius: 0.3rem;
+    margin-bottom: 1rem;
+    color: #fff;
+    padding: 1rem;
+    font-size: 1rem;
+    text-align: left;
+    resize: vertical; 
+    background-image: url('../Body/Home/mypic/background.png');
+}
+
+
+.email-address-optional {
+    width: 16vw;
+    height: auto;
+    min-height: 4vh;
+    margin-bottom: 1rem;
+    border: None;
+    border-radius: 0.3rem;
+    color: #fff;
+    padding: 0.5rem;
+    font-size: 1rem;
+    text-align: left;
+    resize: vertical;
+    background-image: url('../Body/Home/mypic/background.png');
+}
+
+.submitting {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.form-container button {
+    width: 10vw;
+    height: 4vh;
+    background-color: #242424;
+    color: #fff;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid white;
+    transition: 0.5s ease-in-out;
+}
+
+.form-container button:hover {
+    background-color: #fff;
+    color: #242424;
+    border: 1px solid #242424;
+
+}
+
+.social-media-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 45%;
+    margin: 0 auto;
+}
+
+.social-media-container a {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 0 1rem;
+    transition: 0.5s ease-in-out;
+}
+
+.social-media-container a:hover {
+    margin-top: -2rem;
+}
+
+.fa-linkedin {
+    color: #0077b5;
+    margin-bottom: 2rem;
+}
+
+.fa-instagram {
+    color: #E4405F;
+    margin-bottom: 2rem;
+}
+
+.fa-telegram {
+    color: #0088CC;
+    margin-top: 3rem;
+}
+.social-media-container .fa-envelope {
+    color: #D44638;
+    margin-top: 3rem;
+    font-size: 3rem;
+}
+
+.footer-sun {
+    width: 60vw;
+    height: 20vh;
+    align-items: center;
+    justify-content: center; 
+    border-radius: 100% 100% 0% 0%;
+    padding: 0;
+    margin: 0;
+
+}
+.footer-bottom {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2%;
+}
+
+
+@media screen and (max-width: 960px) {
+    .footer-container {
+        padding: 2%;
+        background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+        background-color: #242424;
+       }
+    .submitting {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+    .email-address-optional {
+        width: 65vw;
+        height: auto;
+        min-height: 4vh;
+        background-color: #242424;
+        border: None;
+        border-radius: 0.3rem;
+        color: #fff;
+        padding: 0.5rem;
+        font-size: 1rem;
+        text-align: left;
+        resize: vertical;
+    }
+    .message-required {
+        width: 65vw;
+        height: auto; /* Change height to auto to allow for variable height */
+        min-height: 15vh; /* Set a minimum height for the input field */
+        background-color: #242424;
+        border: none;
+        border-radius: 0.3rem;
+        color: #fff;
+        padding: 1rem;
+        font-size: 1rem;
+        text-align: left;
+        resize: vertical; 
+    }
+    
+    .form-container button {
+        width: 45vw;
+        height: 6vh;
+        background-color: #242424;
+        color: #fff;
+        border: none;
+        font-size: 1.2rem;
+        font-weight: bold;
+        cursor: pointer;
+        border: 1px solid white;
+        transition: 0.5s ease-in-out;
+        margin-top: 0.5rem;
+    }
+    .social-media-container {
+        width: 70%;
+    }
+
+   .footer-sun {
+    width: 70vw;
+    height: 20vh;
+    align-items: center;
+    justify-content: center; 
+    border-radius: 100% 100% 0% 0%;
+    padding: 0;
+    margin: 0;
+    margin-left: 1rem;
+   }
+}
