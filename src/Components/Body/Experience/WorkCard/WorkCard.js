@@ -14,21 +14,23 @@ function WorkCard(props) {
 
   return (
     <div className='work-card-container'>
-        <div className='company-logo-container'>
-            <img src={logos[props.company_name]} alt='company logo'  className='company-logo'/>
+        <div className='job-company-logo-container'>
+            <img src={logos[props.company_name]} alt='company logo'  className='job-company-logo'/>
         </div>
         <div className='job-text'> 
-            <div className='company-name'> {props.company_name} </div>
-            <div className='role-and-date-container'>
-                <div className='role'>  {props.role} </div>
+            <div className='role'> {props.role} </div>
+            <div className='company-name-and-date-container'>
+                <div className='job-company-name'>  {props.company_name} </div>
                 <div className='date'>  {props.duration}</div>
             </div>
-            <div className='description'>
+            <div className='job-description'>
             {props.description}
             </div>
-            <div className='job-skills'> 
-            Skills and Technologies: {props.skills}
+            <div className='job-skills'>
+            {props.skills}
             </div>
+
+
         </div>
             
       

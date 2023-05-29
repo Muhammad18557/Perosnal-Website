@@ -68,6 +68,9 @@
 .fa-file-alt {
     margin-left: 1.2rem;
 }
+.fa-github {
+    font-size: 3.2rem;
+}
 
 .fa-github:hover, .fa-file-alt:hover {
     opacity: 0.6;

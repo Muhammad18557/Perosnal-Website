@@ -1,93 +1,98 @@
 .work-card-container {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    width: 85%;
+    width: 90%;
     height: 100%;
     height: 30vh;
     margin-top: 50px;
     margin-bottom: 20px;
     /* border: 1px solid white; */
 }
+.job-company-logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 20%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid white; */
+}
+
+.job-company-logo {
+    width: 90%;
+    border-radius: 100% 100% 100% 100%;
+    margin-left: 0;
+    margin-right: 0;
+    height: 90%;
+
+}
 .job-text {
     color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 75%;
-    height: 90%;
+    width: 80%;
+    height: 100%;
     margin: 0;
     padding: 0;
-    /* border: 1px solid black; */
     font-size: 1rem;
     flex-direction: column;
 }
-.company-name {
-    /* border: 1px solid black; */
+.role {
     width: 100%;
     margin-top: 0;
     height: 15%;
     font-size: 1.65rem;
-}
-.company-logo-container {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 25%;
-    height: 90%;
-    margin: 0;
-    padding: 0;
+    object-fit: contain;
+    overflow: auto;
 }
 
-.company-logo {
-    width: 70%;
-    border-radius: 100% 100% 100% 100%;
-    margin-left: 0;
-    margin-right: 0;
-    height: 100%;
-}
-
-.role-and-date-container {
+.company-name-and-date-container {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
     width: 100%;
-    height: 20%;
+    height: 17%;
     padding: 0;
     margin-bottom: 0.1rem;
+    border-bottom: 1px solid white;
 }
-.role, .date {
+
+.job-company-name, .date {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: left;
-    width: 70%;
+    width: 60%;
     height: 100%;
-    padding: 0.1rem;
-    border-bottom: 2px solid white;
-    font-size: 1.35rem;
-    margin-bottom: 0.1rem;
+    margin: 0;
+    padding: 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+    /* text-transform: uppercase; */
     overflow: auto;
-    padding-bottom: 0.2rem;
-    padding-top: 0.3rem;
 }
-
 .date {
+    width: 40%;
+    margin-left: 0;
     justify-content: right;
-    width: 30%;
 }
 
-.description {
+.job-description {
     display: flex;
     align-items: left;
     justify-content: justify;
     width: 100%;
-    height: 35%;
+    height: 50%;
     margin: 0;
     padding: 0;
     /* border: 1px solid black; */
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     overflow: auto;
 }
 
@@ -96,10 +101,64 @@
     align-items: flex-end;
     justify-content: flex-start;
     width: 100%;
-    height: 30%;
+    height: 20%;
     margin: 0;
     padding: 0;
     /* border: 1px solid black; */
     font-size: 1.05rem;
     overflow: auto;
+}
+
+@media screen and (max-width: 960px) {
+    .work-card-container {
+        width: 95%;
+    }
+    .job-company-logo {
+        height: 80%;
+        display: flex;
+    }
+    .role {
+        font-size: 1.5rem;
+    }
+
+    .date, .job-company-name {
+        font-size: 1rem;
+    }
+    .job-description, .job-skills {
+        font-size: 0.9rem;
+    }
+    
+} 
+
+@media screen and (max-width: 660px) {
+    .work-card-container {
+        width: 100%;
+    }
+    .job-company-logo-container {
+        height: 60%;
+        width: 25%;
+    }
+    .role {
+        font-size: 1.1rem;
+    }
+    .date, .job-company-name {
+        font-size: 0.9rem;
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+    .work-card-container {
+        height: 40vh;
+    }
+    .role {
+        font-size: 1rem;
+    }
+    .job-description, .job-skills {
+        font-size: 0.8rem;
+    }
+    .job-company-logo-container {
+        height: 50%;
+        width: 30%;
+    }
 }

@@ -121,40 +121,37 @@
         height: 36vh;
         width: 95vw;
     }
-    .company-logo {
+    div.project-card-container .company-logo {
         width: 90%;
         height: 85%;
 
     }
-    .description {
+    div.project-card-container .description {
         font-size: 1.05rem;
         padding: 0;
         height: 50%;
-        border: 1px solid black;
     }
     .year, .stacks {
         font-size: 1.1rem;
     }
     .code-and-website-container {
         height: 18%;
-        border: 1px solid black;
     }
     .year-and-stacks-container {
         height: 12%;
     }
     .company-name {
         font-size: 1.5rem;
-        border: 1px solid black;
         height: 15%;
     }
-    .fa-github, .fa-rocket {
+    div.project-card-container .fa-github, div.project-card-container .fa-rocket {
         font-size: 2.5rem; 
     }
 } 
 
 
 @media screen and (max-width: 750px) {
-    .company-logo {
+     div.project-card-container  .company-logo {
         width: 95%;
         height: 65%;
     }
@@ -162,27 +159,20 @@
 }
 
 @media screen and (max-width: 600px) {
-    .project-card-container {
-        background-color: black;
-    }
     .company-logo-container {
         display: flex;
         align-items: flex-start;
         justify-content: center;
     }
-    .fa-github, .fa-rocket {
-        font-size: 2rem; 
-    }
-    .description {
+    div.project-card-container .description {
         font-size: 0.95rem;
         height: 53%;
     }
     .stacks, .year {
         font-size: 0.95rem;
     }
-    .company-name {
+    div.project-card-container .company-name {
         font-size: 1.2rem;
-        border: 1px solid white;
         height: 12%;
     }
     .cod,
@@ -190,11 +180,81 @@
     font-size: 1rem;
     }
 
-    .fa-github, .fa-rocket {
+    div.project-card-container .fa-github, div.project-card-container .fa-rocket {
         font-size: 1.9rem; 
     }
     .code-and-website-container {
         height: 15%;
-        /* border: 1px solid white; */
     }
 } 
+
+@media screen and (max-width: 500px) {
+    .project-card-container {
+        height: 30vh;
+        margin-top: 4vh;
+        margin-bottom: 2vh;
+    }
+    div.project-card-container .company-logo-container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    div.project-card-container .description {
+        font-size: 0.95rem;
+        height: 53%;
+    }
+    .stacks, .year {
+        font-size: 0.9rem;
+    }
+    .company-name {
+        font-size: 1.2rem;
+        height: 12%;
+    }
+    .cod,
+    .web {
+    font-size: 0.8rem;
+    }
+
+    div.project-card-container .fa-github, div.project-card-container .fa-rocket {
+        font-size: 1.4rem; 
+    }
+    .code-and-website-container {
+        height: 15%;
+    }
+} 
+
+@media screen and (max-width: 450px) {
+    .project-card-container {
+        height: 40vh;
+        margin-top: 4vh;
+        margin-bottom: 2vh;
+    }
+    div.project-card-container .company-logo-container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    div.project-card-container .description {
+        font-size: 0.95rem;
+        height: 53%;
+    }
+    .stacks, .year {
+        font-size: 0.9rem;
+    }
+    .company-name {
+        font-size: 1.2rem;
+        height: 12%;
+    }
+    .cod,
+    .web {
+    font-size: 0.8rem;
+    }
+
+    div.project-card-container .fa-github, div.project-card-container .fa-rocket {
+        font-size: 1.4rem; 
+    }
+    .code-and-website-container {
+        height: 15%;
+    }
+} 
+
