@@ -36,15 +36,16 @@
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    width: 20%;
+    width: 17%;
     height: 90%;
     margin: 0;
 }
 
 
 .college-logo {
-    width: 90%;
-    object-fit: contain; /* Add this line */
+    margin-top: 0;
+    padding-top: 0;
+    width: 85%;
 }
 
 
@@ -56,16 +57,20 @@
 /* Country Logo */
 
 .country-logo-container {
+    width: 17%;
     height: 100%;
-    width: 25%;
+
 }
 .flag-container {
-    height: 60%;
+    height: 63%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
 }
 
 .country-logo {
-    width: 80%;
-    object-fit: fill;
+    width: 90%;
+    height: 100%;
 }
 
 .country-logo:hover {
@@ -73,11 +78,10 @@
     transition: transform 0.5s ease-in-out;
 }
 
-
-/* duration and time taken*/
 .duration {
+    margin-top: 1rem;
     width: 100%;
-    height: 12%;
+    height: 20%;
     font-size: 1rem;
     font-weight: 600;
     color: #fff;
@@ -88,7 +92,7 @@
 
 .timetaken {
     width: 100%;
-    height: 13%;
+    height: 17%;
     font-size: 1rem;
     font-weight: 600;
     color: #fff;
@@ -104,7 +108,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 60%;
+    width: 66%;
     margin: 0; 
     padding: 0;
     height: 100%;
@@ -135,7 +139,7 @@
 .activities,
 .skills {
   font-size: 1.1rem;
-  height: 35%;
+  height: 40%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -146,84 +150,15 @@
 
 .skills {
   align-items: flex-end;
-  height: 65%;
+  height: 60%;
   justify-content: flex-end;
 }
 
 
 
-@media screen and (max-width: 1360px) {
-
-    .yale-nus-college, 
-    .yale-university, 
-    .ubc, 
-    .aitchison-college {
-        width: 90vw;
-    }
-
-    .college-logo-container {
-        width: 18%;
-    }
-    .college-logo {
-        width: 90%;
-        height: 75%;
-
-    }
-
-    .college-text {
-        width: 65%;
-        height: 100%;
-        padding-left: 0;
-    }
-    
-    .country-logo-container {
-        width: 19%;
-        height: 100%;
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    
-    }
-
-    .country-logo {
-        width: 100%;
-        margin: 0;
-        object-fit: fill;
-    }
-
-    .degree {
-        width: 100%;
-        font-size: 1.15rem;
-        height: 17%;
-    }
-
-    .activities,
-    .skills {
-        font-size: 1rem;
-        height: 45%;
-    }
-
-    .skills {
-        height: 60%;
-    }
-    .activities {
-        margin-top: 1rem;
-    }
-}
 
 
-
-@media screen and (max-width: 1190px) {
-    
-        .yale-nus-college, 
-        .yale-university, 
-        .ubc, 
-        .aitchison-college {
-            width: 95vw;
-        }
-}
-
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1180px) {
     
     .yale-nus-college, 
     .yale-university, 
@@ -233,32 +168,19 @@
         width: 95vw;
         height: 38vh;
     }
-
-    .yale-nus-college{
-        margin-top: 4rem;
+    .flag-container {
+        height: 55%;
     }
-    .college-logo {
-        width: 90%;
-        border-radius: 0;
-        height: 60%;
-    }
-    .country-logo {
-        width: 100%;
-        height: 60%;
-    }
-    .duration, .activities, .skills {
-        font-size: 0.9rem;
-    }
-
 }
 
-@media screen and (max-width: 880px) {
+
+@media screen and (max-width: 950px) {
     
     .yale-nus-college, 
     .yale-university, 
     .ubc, 
     .aitchison-college {
-        height: 38vh;
+        height: 40vh;
 
     }
     .college-logo-container {
@@ -266,13 +188,30 @@
         height: 80%;
     }
     .country-logo-container {
-        width: 20%;
+        width: 18%;
+    }
+    .flag-container{ 
+        height: 45%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: right;
     }
     .country-logo {
         width: 100%;
     }
-    .activities {
+    .activities, .skills {
         margin-top: 0;
+        font-size: 0.95rem;
+        height: 37%;
+    }
+    .skills {
+        height: 63%
+    }
+    .degree {
+        width: 100%;
+        font-size: 1.1rem;
+        height: 17%;
     }
 
 }
@@ -284,6 +223,7 @@
     .ubc, 
     .aitchison-college {
         height: 42vh;
+
     }
     .college-logo-container {
         width: 20%;
@@ -297,10 +237,10 @@
         font-size: 0.9rem;
     }
     .duration {
-        font-size: 0.7rem;
+        font-size: 0.75rem;
     }
    .timetaken {
-        font-size: 0.9rem;
+        font-size: 0.75rem;
     }
     .country-logo-container {
         width: 20%;
@@ -312,15 +252,23 @@
     .activities {
         margin-top: 0;
     }
+    .flag-container{ 
+        height: 40%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+    }
 
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 600px) {
     
     .yale-nus-college, 
     .yale-university, 
     .ubc, 
     .aitchison-college {
+        display: flex;
         height: 90vh;
         width: 93vw;
         flex-direction: column;
@@ -328,61 +276,57 @@
         align-items: center;
         border: 1px solid #fff;
         margin-bottom: 2rem;
+        flex-grow: 1;
 
     }
     .college-logo-container {
         width: 100%;
-        height: 25%;
-        margin-bottom: 1rem;
+        height: 20%;
     }
     .college-logo {
-        width: 20%;
+        width: 25%;
         height: 100%;
     }
     .college-text {
         width: 100%;
+        height: 60%;
         margin: 0;
-        padding: 0.2rem;
+        padding: 0.1rem;
+        padding-top: 0.4rem;
     }
-    .degree {
-        font-size: 1.2rem;
-        height: 20%;
-        width: 100%;
-        margin-top:0.2rem;
+    .degree { 
+        font-size: 1.1rem;
+        max-height: 20%;
     }
     .activities-and-skills {
         width: 100%;
-        height: 90%;
-    }
-    .activities, .skills {
-        font-size: 1rem;
-        height: 40%;
-        width: 100%;
+        max-height: 60%;
+        padding: 0.1rem;
+        margin-bottom: 0;
+        padding-bottom: 0;
     }
     .country-logo-container {
         width: 100%;
-        height: 28%;
+        max-height: 25%;
+        min-height: 20%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
     .flag-container {
+        height: 65%;
         width: 100%;
-        height: 75%;
         display: flex;
         align-items: center;
         justify-content: center;
     }
     .country-logo {
-        width: 38%;
+        width: 40%;
         height: 100%;
-        object-fit: fill;
     }
-    .timetaken, .duration {
-        font-size: 0.8rem;
+    .duration, .timetaken {
+        font-size: 0.9rem;
+        max-height: 15%;
         width: 100%;
-        height: 12.5%;
         text-align: center;
     }
 }
