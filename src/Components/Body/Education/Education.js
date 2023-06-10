@@ -1,17 +1,19 @@
-import React from 'react'
-import './Education.css'
-import yalenus from './collegelogos/yale-nus-logo.png'
-import yale from './collegelogos/yale-university-logo.jpeg'
-import ubc from './collegelogos/UBC-logo-2.jpeg'
-import ac from './collegelogos/aitchison.png'
-import sg from './flags/sg.png'
-import usa from './flags/usa.png'
-import canada from './flags/canada.png'
-import Pakistan from './flags/Pakistan.png'
-import Quote from './Quote/Quote'
-import SchoolCard from './SchoolCard/SchoolCard'
-import props from './education-data.json'
+import React, { useEffect, useState } from 'react';
+import './Education.css';
+import Quote from './Quote/Quote';
+import SchoolCard from './SchoolCard/SchoolCard';
+
 function Education() {
+  const [schoolData, setSchoolData] = useState([]);
+
+  useEffect(() => {
+    // Fetch the data from the API endpoint in the backend
+    fetch('/api/education')
+      .then(response => response.json())
+      .then(data => setSchoolData(data))
+      .catch(error => console.error(error));
+  }, []);
+
   const quoteData = {
     quote: "\"Education is the most powerful weapon which you can use to change the world.\"",
     author: "Nelson Mandela"
@@ -19,11 +21,11 @@ function Education() {
 
   return (
     <div className='education-container'>  
-        {props.map ((schoolProps, index) => (
-            <SchoolCard {...schoolProps} key={index}/>
-        ))}
+      {schoolData.map((schoolProps, index) => (
+        <SchoolCard {...schoolProps} key={index} />
+      ))}
     </div>
-  )
+  );
 }
 
-export default Education
+export default Education;
