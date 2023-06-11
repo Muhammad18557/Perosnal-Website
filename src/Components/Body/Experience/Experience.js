@@ -12,7 +12,7 @@ function Experience() {
   const [workData, setWorkData] = useState([]);
 
   useEffect(() => {
-    fetch('/api/work')
+    fetch('http://localhost:3000/api/work')
       .then(response => response.json())
       .then(data => setWorkData(data))
       .catch(error => console.error(error));

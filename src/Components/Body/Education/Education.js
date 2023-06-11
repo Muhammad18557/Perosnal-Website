@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import './Education.css';
-import Quote from './Quote/Quote';
 import SchoolCard from './SchoolCard/SchoolCard';
 
 function Education() {
@@ -8,7 +7,7 @@ function Education() {
 
   useEffect(() => {
     // Fetch the data from the API endpoint in the backend
-    fetch('/api/education')
+    fetch('http://localhost:3000/api/education')
       .then(response => response.json())
       .then(data => setSchoolData(data))
       .catch(error => console.error(error));
