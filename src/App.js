@@ -6,6 +6,7 @@ import Footer from './Components/Footer/Footer'
 import Education from './Components/Body/Education/Education';
 import Experience from './Components/Body/Experience/Experience';
 import Projects from './Components/Body/Projects/Projects';
+import AdminPanel from './Components/Body/AdminPanel/AdminPanel';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path='/education' exact component={Education} />
           <Route path='/work' exact component={Experience} />
           <Route path='/projects' exact component={Projects} />
+          <Route path='/admin' exact component={AdminPanel} />
         </Switch>
         <Footer />
       </Router>

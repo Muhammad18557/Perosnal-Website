@@ -26,6 +26,7 @@ function Header() {
                 <li className='menu-item'> <Link to='/education' className='menu-links' onClick={closeMobileMenu}> Education</Link></li>
                 <li className='menu-item'> <Link to='/projects' className='menu-links' onClick={closeMobileMenu}> Projects</Link> </li>
                 <li className='menu-item'> <Link to='/work' className='menu-links' onClick={closeMobileMenu}> Experience</Link></li>
+                <li className='menu-item'> <Link to='/admin' className='menu-links' onClick={closeMobileMenu}> Admin</Link></li>
                 {/* <li className='menu-item'> <Link to='/blogs' className='menu-links' onClick={closeMobileMenu}> blogs</Link></li> */}
             </ul>
         </div>
