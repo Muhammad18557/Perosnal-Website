@@ -12,25 +12,35 @@ import Pakistan from '../flags/Pakistan.png'
 
 const imageMapping = {
     'yale-nus-college': yalenus,
+    'yale-nus college': yalenus,
     'yale-university': yale,
     'ubc': ubc,
+    'university of british columbia': ubc,
     'aitchison-college': ac,
+    'aitchison college': ac,
   };
   
   const flagMapping = {
-    'Singapore': sg,
-    'USA': usa,
-    'Canada': canada,
-    'Pakistan': Pakistan,
+    'singapore': sg,
+    'usa': usa,
+    'canada': canada,
+    'pakistan': Pakistan,
   };
   
   
 function SchoolCard(props) {
-    const collegeLogo = imageMapping[props.school_name];
-    const countryFlag = flagMapping[props.country];
-    
+  const lowerCaseSchoolName = props.school_name.toLowerCase();
+  const lowerCaseCountry = props.country.toLowerCase();
+  
+  const collegeLogo = imageMapping.hasOwnProperty(lowerCaseSchoolName)
+    ? imageMapping[lowerCaseSchoolName]
+    : yalenus;
+  
+  const countryFlag = flagMapping.hasOwnProperty(lowerCaseCountry)
+    ? flagMapping[lowerCaseCountry]
+    : sg;
      return (
-       <div className={props.school_name}>
+       <div className='educational-institution'>
             <div className='college-logo-container'> 
               <img src={collegeLogo} alt={props.school_name} className='college-logo'/>
             </div>

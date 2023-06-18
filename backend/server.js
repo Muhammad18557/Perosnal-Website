@@ -16,6 +16,8 @@ const pool = new Pool({
   
 
 app.use(cors());
+app.use(express.json());
+
 
 function executeQuery(sql, res) {
   pool.query(sql, (error, results) => {
@@ -46,6 +48,52 @@ app.get('/api/work', (req, res) => {
 app.get('/api/projects', (req, res) => {
   const sql = 'SELECT * FROM projects';
   executeQuery(sql, res);
+});
+
+
+app.post('/api/admin/education', (req, res) => {
+  const { school_name, degree, activities, skills, duration, country, timetaken } = req.body;
+  const sql = `INSERT INTO education (school_name, degree, activities, skills, duration, country, timetaken) 
+               VALUES ($1, $2, $3, $4, $5, $6, $7)`;
+  const values = [school_name, degree, activities, skills, duration, country, timetaken];
+
+  pool.query(sql, values, (error, results) => {
+    if (error) {
+      res.status(500).json({ error: 'An error occurred while adding the row.' });
+    } else {
+      res.status(200).json({ message: 'Row added successfully.' });
+    }
+  });
+});
+
+app.post('/api/admin/work', (req, res) => {
+  const { company_name, role, duration, description, skills } = req.body;
+  const sql = `INSERT INTO work (company_name, role, duration, description, skills) 
+               VALUES ($1, $2, $3, $4, $5)`;
+  const values = [company_name, role, duration, description, skills];
+
+  pool.query(sql, values, (error, results) => {
+    if (error) {
+      res.status(500).json({ error: 'An error occurred while adding the row.' });
+    } else {
+      res.status(200).json({ message: 'Row added successfully.' });
+    }
+  });
+});
+
+app.post('/api/admin/projects', (req, res) => {
+  const { title, description, stacks, year, code, link, image } = req.body;
+  const sql = `INSERT INTO projects (title, description, stacks, year, code, link, image) 
+               VALUES ($1, $2, $3, $4, $5, $6, $7)`;
+  const values = [title, description, stacks, year, code, link, image];
+
+  pool.query(sql, values, (error, results) => {
+    if (error) {
+      res.status(500).json({ error: 'An error occurred while adding the row.' });
+    } else {
+      res.status(200).json({ message: 'Row added successfully.' });
+    }
+  });
 });
 
 app.listen(port, () => {

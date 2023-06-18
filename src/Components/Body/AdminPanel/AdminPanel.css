@@ -1,3 +1,4 @@
+
 .admin-panel-container {
   display: flex;
   flex-direction: column;
@@ -5,4 +6,120 @@
   justify-content: center;
   width: 100%;
   margin-top: 13vh; 
+  margin-bottom: 2rem;
 }
+
+.forms-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* border: 1px solid blue; */
+  align-items: center;
+  justify-content: center;
+}
+.form-heading {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+
+}
+.admin-form-container {
+  display: flex;
+  flex-direction: column;
+  width: 94%;
+  /* border: 1px solid red; */
+  margin: 1.5rem;
+  transition: width 2s ease; 
+}
+
+.admin-form-container .big-input {
+  display: flex;
+  /* border: 1px solid blue; */
+  height: 10vh;
+  
+}
+
+.admin-form-container input::placeholder {
+  font-size: 1.1rem;
+  font-weight: 400;
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+  font-style: italic;
+  padding: 0.1rem;
+}
+
+.admin-form-container input {
+  display: flex;
+  /* border: 1px solid blue; */
+  height: 3.5vh;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  
+}
+.two-inputs {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  /* border: 1px solid red; */
+  justify-content: center;
+}
+
+.two-inputs label {
+  flex: 1;
+}
+
+.two-inputs input {
+  flex: 5;
+}
+.two-inputs select {
+  flex:5;
+}
+
+.admin-form-container input[type="text"] {
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  color: #333;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.admin-form-container .form-container {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+}
+
+.form-option {
+  height: 9vh;
+  width: 90%;
+  margin: 0.5rem;
+  transition: width 1s ease;
+  background-image: url('../../Footer/footer-pics/final-background.png');
+}
+
+.form-option-active {
+  width:94%;
+}
+
+.success {
+  font-size: 1.5rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: italic;
+  color: yellow;
+}
+
+.option {
+  color: white;
+  font-size: 1.5rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.welcome {
+  font-size: 2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
