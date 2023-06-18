@@ -13,8 +13,7 @@ const ProjectForm = () => {
   const [image, setImage] = useState(null);
   const [confirm, setConfirm] = useState(false);
   const [userInput, setUserInput] = useState({});
-  const [loading, setLoading] = useState(false);
-
+  
   const identify = 2;
   const history = useHistory();
 
@@ -47,13 +46,11 @@ const ProjectForm = () => {
       .then(data => {
         console.log('Row added successfully:', data);
         setTimeout(() => {
-          setLoading(true);
           history.push('/projects');
         }, 2000);
       })
       .catch(error => {
         console.error('Error adding row:', error);
-        setLoading(false);
       });
   };
 
@@ -136,7 +133,16 @@ const ProjectForm = () => {
           type="file"
           id="image"
           accept="image/*"
-          onChange={(e) => setImage(e.target.files[0])}
+          onChange={(e) => {
+            const file = e.target.files[0];
+            if (file) {
+              const reader = new FileReader();
+              reader.onloadend = () => {
+                setImage(reader.result);
+              };
+              reader.readAsDataURL(file);
+            }
+        }}
         />
 
         <div className="form-container">
