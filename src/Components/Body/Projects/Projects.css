@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin-top: 50px;
+    margin-top: 80px;
     background-color: black;
     background-image: url('./projectbackground/option-3.avif');
     background-repeat: no-repeat;
@@ -12,3 +12,39 @@
     background-position: center;
     background-attachment: fixed;
 }
+
+
+
+@keyframes slideInTop {
+    0% {
+      opacity: 0;
+      transform: translateY(-20%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideInBottom {
+    0% {
+      opacity: 0;
+      transform: translateY(20%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .project-card {
+    min-width: 100%;
+  }
+
+  .project-card.animate:nth-child(odd) {
+    animation: slideInTop 1s ease-in-out forwards
+  }
+ 
+  .project-card.animate:nth-child(even) {
+    animation: slideInBottom 1s ease-in-out forwards
+  }
+ 

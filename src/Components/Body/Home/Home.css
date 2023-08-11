@@ -18,7 +18,7 @@
 .my-photo {
     width: 85%;
     height: 65%;
-    border-radius: 100% 100% 100% 100%;
+    /* border-radius: 100% 100% 100% 100%; */
     transition: transform 0.5s ease;
     /* border: 1px solid white; */
 }
@@ -51,11 +51,15 @@
     margin-top: 1rem;
   }
   
+.intro-text {
+    animation: slideInBottom 1s ease-in-out forwards
+}
 
 .skillset {
     display: flex;
     width: 100%;
     margin-top: 1rem;
+    animation: slideInTop 1s ease-in-out forwards
 }
 
 .fa-file-alt, .fa-github {
@@ -85,6 +89,8 @@
     justify-content: space-between;
     margin-top: 4rem;
     margin-bottom: 3rem;
+    animation: slideInBottom 1s ease-in-out forwards
+
 }
 
 .label-github {
@@ -248,3 +254,47 @@
     }
     
 }
+
+.typing-cursor {
+    display: inline-block;
+    width: 0.3em;
+    margin-left: 0.1em;
+    animation: blink 1s infinite;
+  }
+  
+  @keyframes blink {
+    0%, 100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+
+
+  .intro-heading {
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: fadeInUp 3s forwards, moveUp 3s forwards;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes moveUp {
+    from {
+      transform: translateY(20px);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  

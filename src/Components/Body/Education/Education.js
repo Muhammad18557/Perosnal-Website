@@ -20,11 +20,13 @@ function Education() {
 
   return (
     <div className='education-container'>  
-      {schoolData.map((schoolProps, index) => (
-        <SchoolCard {...schoolProps} key={index} />
-      ))}
-    </div>
-  );
+    {schoolData.map((schoolProps, index) => (
+      <div className="school-card" key={index}>
+        <SchoolCard {...schoolProps} />
+      </div>
+    ))}
+  </div>
+);
 }
 
 export default Education;

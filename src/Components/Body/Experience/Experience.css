@@ -11,3 +11,17 @@
     background-position: center;
     background-attachment: fixed;
 }
+
+.work-card-animate {
+    width: 90%;
+}
+
+.work-card-animate:nth-child(odd) {
+    animation: slideInFromRight 0.9s ease-in-out;
+}
+
+.work-card-animate:nth-child(even) {
+    animation: slideInFromLeft 0.9s ease-in-out;
+}
+
+

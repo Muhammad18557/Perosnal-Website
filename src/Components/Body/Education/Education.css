@@ -316,3 +316,34 @@
     }
 }
 
+
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .school-card:nth-child(odd) {
+    animation: slideInFromLeft 0.9s ease-in-out;
+  }
+  
+  .school-card:nth-child(even) {
+    animation: slideInFromRight 1s ease-in-out;
+  }
+  

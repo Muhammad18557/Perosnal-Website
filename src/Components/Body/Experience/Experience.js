@@ -21,7 +21,7 @@ function Experience() {
   return (
     <div className='experience-container'>
       {workData.slice(0, workData.length - 2).map((work, index) => (
-        <WorkCard {...work} key={index} />
+        <div className='work-card-animate' key={index}> <WorkCard {...work} /> </div>
       ))}
       <Quote {...quoteData} />
       {workData.slice(workData.length - 2).map((work, index) => (
