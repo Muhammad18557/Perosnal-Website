@@ -98,14 +98,14 @@
     font-weight: 600;
     margin-left: 1rem;
     margin-top: 0.5rem;
-    animation: fadeEffect 1s infinite; /* Apply the fade effect animation for 5 seconds, infinitely repeating */
+    animation: fadeEffect 1s infinite;
 }
 
 
 @keyframes fadeEffect {
-    0% { opacity: 1; } /* Start with full opacity */
-    50% { opacity: 0.8; } /* Fade out to lower opacity */
-    100% { opacity: 1; } /* Fade back in to full opacity */
+    0% { opacity: 1; } 
+    50% { opacity: 0.8; } 
+    100% { opacity: 1; } 
 }
 
 .label-resume {
