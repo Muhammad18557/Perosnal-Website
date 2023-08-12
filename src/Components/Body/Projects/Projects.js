@@ -14,7 +14,7 @@ function Projects() {
   
   return (
     <div className='projects-container'>
-      {projectsData.map((project, index) => (
+      {projectsData && projectsData.map((project, index) => (
         <div className='project-card animate' key={index}>
           <Project {...project} />
         </div>

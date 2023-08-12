@@ -15,16 +15,19 @@ const pool = new Pool({
   port: process.env.DB_PORT,
 });
 
+
 const storage = multer.diskStorage({
-  destination: function (req, file, cb) {
-    cb(null, 'uploads/');
+  destination: (req, file, callback) => {
+    callback(null, 'uploads/');
   },
-  filename: function (req, file, cb) {
-    cb(null, Date.now() + '-' + file.originalname);
+  filename: (req, file, callback) => {
+    const uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1E9);
+    callback(null, file.fieldname + '-' + uniqueSuffix);
   },
 });
 
-const upload = multer({ storage: storage });
+const upload = multer({ storage });
+
 
 app.use(cors());
 app.use(express.json({ limit: '10mb' }));
@@ -90,16 +93,18 @@ app.post('/api/admin/work', (req, res) => {
   });
 });
 
+// Handle POST request to /api/admin/projects
 app.post('/api/admin/projects', upload.single('image'), (req, res) => {
   const { title, description, stacks, year, code, link } = req.body;
-
+  console.log(req.file);
+  console.log(req.body);
+  console.log("this endpoint is hit");
   // Check if a file was uploaded
   if (!req.file) {
-    res.status(400).json({ error: 'No file uploaded.' });
-    return;
+    return res.status(400).json({ error: 'No file uploaded.' });
   }
 
-  const image = req.file.path; // Retrieve the file path of the uploaded image
+  const image = req.file.path;
 
   // Include the image path in your database query
   const sql = `INSERT INTO projects (title, description, stacks, year, code, link, image) 
@@ -108,12 +113,38 @@ app.post('/api/admin/projects', upload.single('image'), (req, res) => {
 
   pool.query(sql, values, (error, results) => {
     if (error) {
-      res.status(500).json({ error: 'An error occurred while adding the row.' });
+      return res.status(500).json({ error: 'An error occurred while adding the row.' });
     } else {
-      res.status(200).json({ message: 'Row added successfully.' });
+      return res.status(200).json({ message: 'Row added successfully.' });
     }
   });
 });
+
+
+// app.post('/api/admin/images', upload.single('image'), (req, res) => {
+
+//   // Check if a file was uploaded
+//   if (!req.file) {
+//     res.status(400).json({ error: 'No file uploaded.' });
+//     console.log('No file uploaded.');
+//     return;
+//   }
+
+//   const image = req.file.path;
+
+//   // Include the image path in your database query
+//   const sql = `INSERT INTO images (image) 
+//                VALUES ($1)`;
+//   const values = [image];
+
+//   pool.query(sql, values, (error, results) => {
+//     if (error) {
+//       res.status(500).json({ error: 'An error occurred while adding the row.' });
+//     } else {
+//       res.status(200).json({ message: 'Row added successfully.' });
+//     }
+//   });
+// });
 
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);

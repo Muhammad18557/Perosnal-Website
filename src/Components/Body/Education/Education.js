@@ -6,7 +6,6 @@ function Education() {
   const [schoolData, setSchoolData] = useState([]);
 
   useEffect(() => {
-    // Fetch the data from the API endpoint in the backend
     fetch('http://localhost:3000/api/education')
       .then(response => response.json())
       .then(data => setSchoolData(data))
@@ -20,7 +19,7 @@ function Education() {
 
   return (
     <div className='education-container'>  
-    {schoolData.map((schoolProps, index) => (
+    {schoolData && schoolData.map((schoolProps, index) => (
       <div className="school-card" key={index}>
         <SchoolCard {...schoolProps} />
       </div>
