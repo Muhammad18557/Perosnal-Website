@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import React from 'react';
 import './Home.css';
-import myPhoto from './mypic/mypic-5.jpeg';
+import myPhoto from './mypic/possible-me.jpeg';
 
 function Home() {
   const [introText, setIntroText] = useState('');
@@ -31,7 +31,7 @@ function Home() {
   return (
     <>
     <div className='home-container'>
-    <div className='my-photo-container'>
+      <div className='my-photo-container'>
         <img src={myPhoto} className='my-photo' alt='My Photo' />
        </div>
 
@@ -40,8 +40,8 @@ function Home() {
         
         <h2 className='intro-text'>I am a penultimate Computer Science major at Yale-NUS College of National University of Singapore, and currently spending a semester abroad at Yale University, USA. I am an asipiring software engineer and love trying out new technology stacks. Hit me up if you want to work on a project together from anywhere in the world.</h2>
 
-        <h2 className='skillset'>Skills:  Python, JavaScript, React, Java, C++, C, OCaml, Html, CSS, git, Machine Learning, Linear Algebra, Data Structures and Algorithms, Object Oriented Porgramming.</h2>
-  
+        <h2 className='skillset'>Skills/Stacks:  Python, C++, OCaml, JavaScript, Html, CSS, git, Machine Learning and Applications of Linear Algebra, Data Analysis, Data Structures and Algorithms, Object Oriented and Fuctional Porgramming.</h2>
+
 
         <div className='resume-and-contact'>
             <div className='contact-link'>

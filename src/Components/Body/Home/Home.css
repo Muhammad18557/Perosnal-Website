@@ -9,15 +9,17 @@
 }
 .my-photo-container {
     /* border: 1px solid red; */
+    height : 100vh;
     width: 50%;
-    padding: 1rem; 
+    padding: 0.1rem; 
     display: flex;
     align-items: flex-start;
     justify-content: left;
+    margin: 0;
 }
 .my-photo {
-    width: 85%;
-    height: 65%;
+    width: 95%;
+    height: 80%;
     /* border-radius: 100% 100% 100% 100%; */
     transition: transform 0.5s ease;
     /* border: 1px solid white; */
@@ -154,7 +156,7 @@
 
     .my-photo-container {
         width: 50%;
-        height: 50vh;
+        /* height: 50vh; */
     }
 
     .my-photo {

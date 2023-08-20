@@ -9,6 +9,8 @@ function Project(props) {
           src={`http://localhost:3000/${props.image}`}
           alt='company logo'
           className='company-logo'
+          href={props.link ? props.link : props.code}
+          target="_blank"
         />
       </div>
       <div className='job-text'>
