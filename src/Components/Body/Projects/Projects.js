@@ -10,6 +10,7 @@ function Projects() {
       .then(response => response.json())
       .then(data => setProjectsData(data))
       .catch(error => console.error(error));
+      console.log(projectsData);
   }, []);
   
   return (

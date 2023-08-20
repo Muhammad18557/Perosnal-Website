@@ -4,14 +4,16 @@ import axios from 'axios';
 class ProjectsForm extends Component {
   state = {
     imageFile: null,
-    title: '', 
+    title: '',
     description: '',
     stacks: '',
     year: '',
     code: '',
     link: '',
+    rank: '',
     confirm: false,
-  }
+  };
+  
 
   fileSelectedHandler = event => {
     this.setState({
@@ -21,31 +23,51 @@ class ProjectsForm extends Component {
 
   // Generic function to update state for any field
   handleFieldChange = (fieldName, value) => {
-    this.setState({
-      [fieldName]: value
-    });
+    if (fieldName === 'rank') {
+      // Ensure the entered value is a valid integer
+      const intValue = parseInt(value);
+      if (!isNaN(intValue)) {
+        this.setState({
+          [fieldName]: intValue
+        });
+      }
+      else {
+        this.setState({
+          [fieldName]: 1
+        });
+      }
+    } else {
+      this.setState({
+        [fieldName]: value
+      });
+    }
   }
-
   fileUploadHandler = () => {
     const fd = new FormData();
     fd.append('title', this.state.title);
     fd.append('description', this.state.description);
     fd.append('stacks', this.state.stacks);
     fd.append('year', this.state.year);
+    fd.append('rank', this.state.rank); 
     fd.append('code', this.state.code);
     fd.append('link', this.state.link);
     fd.append('image', this.state.imageFile, this.state.imageFile.name);
   
-    axios.post('http://localhost:3000/api/admin/projects', fd).then(res => {
+    axios.post('http://localhost:3000/api/admin/projects', fd).then((res) => {
       console.log(res);
+    });
+  };
+
+  handleFirstSubmit = () => {
+    this.setState({
+      confirm: true
     });
   }
   
   render() {
     return (
-      <div>
-        <input type="file" onChange={this.fileSelectedHandler} />
-
+      <>      
+      {<form className="admin-form-container">
         <label htmlFor="title">Project Title:</label>
         <input
           type="text"
@@ -86,6 +108,16 @@ class ProjectsForm extends Component {
           required
         />
 
+        <label htmlFor="rank">Rank:</label>
+        <input
+          type="text"
+          id="rank"
+          value={this.state.rank}
+          placeholder="1"
+          onChange={(e) => this.handleFieldChange('rank', e.target.value)}
+          required
+        />
+
         <label htmlFor="githubLink">GitHub Link:</label>
         <input
           type="text"
@@ -105,8 +137,13 @@ class ProjectsForm extends Component {
           onChange={e => this.handleFieldChange('link', e.target.value)}
         />
 
-        <button onClick={this.fileUploadHandler}>Submit</button>
-      </div>
+        <input type="file" onChange={this.fileSelectedHandler} />
+
+        <div className="form-container">
+          <button onClick={this.fileUploadHandler}>Submit</button>
+        </div>
+      </form>}
+      </>
     );
   }
 }

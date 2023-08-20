@@ -53,6 +53,7 @@ function ConfirmationDialog({ userInput, handleOk, handleCancel, identify }) {
       description: 'Description',
       stacks: 'Tech Stacks',
       year: 'Year',
+      rank: 'Rank',
       code: 'Github Link',
       link: 'Link',
       image: 'Image Link',
