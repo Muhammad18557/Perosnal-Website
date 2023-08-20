@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import { useHistory } from 'react-router-dom'; 
+
 
 class ProjectsForm extends Component {
   state = {
@@ -55,6 +57,8 @@ class ProjectsForm extends Component {
   
     axios.post('http://localhost:3000/api/admin/projects', fd).then((res) => {
       console.log(res);
+      const history = useHistory();
+      history.push('/projects');
     });
   };
 

@@ -45,16 +45,16 @@ function Home() {
 
         <div className='resume-and-contact'>
             <div className='contact-link'>
-                <a href='https://marketplace.canva.com/EAE8mhdnw_g/2/0/1131w/canva-grey-clean-cv-resume-photo-pIsBixsev8I.jpg' target="_blank"> <i className="fa-brands fa-github"></i> 
+                <a href='https://github.com/Muhammad18557' target="_blank"> <i className="fa-brands fa-github"></i> 
                 <h1 className="label-github">GitHub</h1> </a>
             </div>
 
             <div className='resume-link'> 
-                <a href='https://marketplace.canva.com/EAE8mhdnw_g/2/0/1131w/canva-grey-clean-cv-resume-photo-pIsBixsev8I.jpg' target="_blank"><i className="fas fa-file-alt"></i>
+                <a href='https://drive.google.com/file/d/1AvfKevuhJVdNI3snJ3fYPapYwvrF919K/view?usp=sharing' target="_blank"><i className="fas fa-file-alt"></i>
                 <h1 className="label-resume">Resume</h1> </a>
             </div>
         </div>
-        <h2 className='skillset'> Interests: Swimming, Squash, Table Tennis, Cricket. </h2>
+        <h2 className='skillset'> Interests: Swimming, Squash, Hiking, Cricket, Table Tennis. </h2>
         <div className='languages'>
               <i className='fas fa-language fa-xl language-name'></i>
               <div className='language-name'>English </div> 

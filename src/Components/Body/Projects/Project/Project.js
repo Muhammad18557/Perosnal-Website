@@ -21,7 +21,7 @@ function Project(props) {
         <div className='code-and-website-container'>
           <div className='website'>
             {props.link ? (
-              <a href={props.link}>
+              <a href={props.link} target="_blank">
                 <i className='fas fa-rocket fa-2xl'></i> &nbsp;
                 <span className='web'>View Project</span>
               </a>
@@ -29,7 +29,7 @@ function Project(props) {
           </div>
           <div className='code'>
             {props.code ? (
-              <a href={props.code}>
+              <a href={props.code} target="_blank">
                 <i className='fab fa-github fa-2xl'></i> &nbsp;
                 <span className='cod'>View Code </span>
               </a>

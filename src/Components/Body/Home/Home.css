@@ -89,7 +89,7 @@
     justify-content: space-between;
     margin-top: 4rem;
     margin-bottom: 3rem;
-    animation: slideInBottom 2s ease-in-out forwards
+    animation: slideInBottom 4s ease-in-out forwards
 
 }
 
@@ -275,7 +275,7 @@
   .intro-heading {
     opacity: 0;
     transform: translateY(-50px);
-    animation: fadeInUp 3s forwards, moveUp 3s forwards;
+    animation: fadeInUp 4s forwards, moveUp 4s forwards;
   }
   
   @keyframes fadeInUp {

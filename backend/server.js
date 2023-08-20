@@ -94,36 +94,7 @@ app.post('/api/admin/work', (req, res) => {
   });
 });
 
-// Handle POST request to /api/admin/projects
-// app.post('/api/admin/projects', upload.single('image'), (req, res) => {
-//   const { title, description, stacks, year, rank, code, link } = req.body;
-//   console.log(req.file);
-//   console.log(req.body);
-//   console.log("this endpoint is hit");
-//   // Check if a file was uploaded
-//   if (!req.file) {
-//     console.log("There is no file accompanied to the request.")
-//     return res.status(400).json({ error: 'No file uploaded.' });
-//   }
 
-//   const image = req.file.path;
-
-//   // Include the image path in your database query
-//   const sql = `INSERT INTO projects (title, description, stacks, year, rank, code, link, image) 
-//                VALUES ($1, $2, $3, $4, $5, $6, $7, $8)`;
-//   const values = [title, description, stacks, year, rank, code, link, image];
-
-//   pool.query(sql, values, (error, results) => {
-//     if (error) {
-//       console.log(error)
-//       return res.status(500).json({ error: 'An error occurred while adding the row.' });
-//     } else {
-//       return res.status(200).json({ message: 'Row added successfully.' });
-//     }
-//   });
-// });
-
-// Handle POST request to /api/admin/projects
 app.post('/api/admin/projects', upload.single('image'), async (req, res) => {
   console.log("endpoint was hit")
   const { title, description, stacks, year, rank, code, link } = req.body;
@@ -160,32 +131,6 @@ app.post('/api/admin/projects', upload.single('image'), async (req, res) => {
     return res.status(500).json({ error: 'An error occurred while adding the row.' });
   }
 });
-
-
-// app.post('/api/admin/images', upload.single('image'), (req, res) => {
-
-//   // Check if a file was uploaded
-//   if (!req.file) {
-//     res.status(400).json({ error: 'No file uploaded.' });
-//     console.log('No file uploaded.');
-//     return;
-//   }
-
-//   const image = req.file.path;
-
-//   // Include the image path in your database query
-//   const sql = `INSERT INTO images (image) 
-//                VALUES ($1)`;
-//   const values = [image];
-
-//   pool.query(sql, values, (error, results) => {
-//     if (error) {
-//       res.status(500).json({ error: 'An error occurred while adding the row.' });
-//     } else {
-//       res.status(200).json({ message: 'Row added successfully.' });
-//     }
-//   });
-// });
 
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);

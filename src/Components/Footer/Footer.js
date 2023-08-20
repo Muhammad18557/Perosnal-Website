@@ -54,13 +54,13 @@ function Footer() {
         <a href="mailto:bdllharshad@gmail.com">
           <i className="far fa-envelope"></i>
         </a>
-        <a href="https://www.linkedin.com/in/muhammad-abdullah-arshad-5a49741ba/" target="_blank">
+        <a href="https://www.linkedin.com/in/muhammad-abdullah-5a49741ba/" target="_blank">
           <i className="fab fa-linkedin fa-2xl"></i>
         </a>
         <a href="https://www.instagram.com/abdullah_18557" target="_blank">
           <i className="fa-brands fa-instagram fa-2xl"></i>
         </a>
-        <a href="https://www.instagram.com/abdullah_18557" target="_blank">
+        <a href="https://t.me/abdullah_18557" target="_blank">
           <i className="fa-brands fa-telegram fa-2xl"></i>
         </a>
       </div>
