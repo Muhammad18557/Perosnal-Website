@@ -9,7 +9,7 @@
 }
 .my-photo-container {
     /* border: 1px solid red; */
-    height : 100vh;
+    /* height : 100vh; */
     width: 50%;
     padding: 0.1rem; 
     display: flex;
