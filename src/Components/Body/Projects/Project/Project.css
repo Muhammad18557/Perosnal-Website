@@ -230,16 +230,6 @@
 } 
 
 @media screen and (max-width: 450px) {
-    .project-card-container {
-        height: 40vh;
-        margin-top: 4vh;
-        margin-bottom: 2vh;
-    }
-    div.project-card-container .company-logo-container {
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
-    }
     div.project-card-container .description {
         font-size: 0.95rem;
         height: 53%;
