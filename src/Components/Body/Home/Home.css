@@ -229,19 +229,18 @@
 @media screen and (max-width: 550px){
     .my-photo-container {
         /* border: 1px solid white; */
-        width: 75%;
+        width: 100%;
         padding: 1rem; 
         display: flex;
         align-items: center;
         justify-content: center;
         order: -1;
-
     }
 
     .my-photo {
-        width: 90%;
+        width: 80%;
         margin-top: 1rem;
-        height: 45vh;
+        height: 37vh;
         border-radius: 0;
         transition: transform 1s ease;
         border-radius: 100%;
@@ -251,10 +250,30 @@
         width: 100%;
     }
     .language-name {
-        margin-top: 1.5rem; 
-        margin-bottom: 1.5rem;
+        margin-top: 0.9rem; 
+        margin-bottom: 0.9rem;
     }
-    
+
+    .intro > h1 {
+        font-size: 2.5rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+    .intro > h2 {
+        text-align: left;
+        font-size: 1.2rem;
+        text-align: justify;
+        padding: 0;
+
+    }
+    .resume-and-contact {
+        margin-top: 3.1rem;
+        width: 100%;
+    }
+
+    .language-name {
+        font-size: 1.5rem;
+    }
 }
 
 .typing-cursor {

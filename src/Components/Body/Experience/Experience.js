@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import WorkCard from './WorkCard/WorkCard';
 import Quote from '../Education/Quote/Quote';
 import './Experience.css';
-
+import data from './workData.json'
 const quoteData = {
   quote: "\"Work hard in silence, let your success be your noise.\"",
   author: "Frank Ocean"
@@ -11,12 +11,15 @@ const quoteData = {
 function Experience() {
   const [workData, setWorkData] = useState([]);
 
+  // useEffect(() => {
+  //   fetch('http://localhost:3000/api/work')
+  //     .then(response => response.json())
+  //     .then(data => setWorkData(data))
+  //     .catch(error => console.error(error));
+  // }, []);
   useEffect(() => {
-    fetch('http://localhost:3000/api/work')
-      .then(response => response.json())
-      .then(data => setWorkData(data))
-      .catch(error => console.error(error));
-  }, []);
+    setWorkData(data);
+  });
 
   return (
     <div className='experience-container'>

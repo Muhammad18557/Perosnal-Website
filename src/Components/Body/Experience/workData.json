@@ -1,42 +1,47 @@
 [
-    {
-      "company_name": "Yale-NUS College",
-      "role": "Summer Research Assistant",
-      "description": "Documented and improved functions of scobra python package under Prof. Maurice Cheung using Object Oriented Programming fundamentals.",
-      "skills": "Python, GitHub, Object Oriented Programming, Data Analysis, Data Visualization, Scientific Writing",
-      "duration": "May 2022 - Aug 2022",
-      "place": "Singapore"
-    }, 
-    {
-        "company_name": "YNC_Hacks",
-        "role": "Copresident",
-        "description": "Implemented semester-long software and hardware workshops and projects catering to different skill levels, increasing active membership by 200%. Co-organized the inaugural hackathon at the university, bringing together students from diverse majors.",
-        "skills": "Python, Probelm solving, Leardership, Teamwork, Communication, Event Management",
-        "duration": "Jan 2022 - Aug 2023",
-        "place": "Singapore"
-    }, 
-    {
-      "company_name": "Yale-NUS College",
-      "role": "Peer Tutor for Introduction to Computer Science",
-      "description": "Worked under Prof. Olivier Danvy to tutor students in the highly rigorous introduction to computer science class taught in a functional Programming language, OCaml. Hosted weekly open sessions and one-to-one tutorials to explain fundamental computing and programming concepts including tail and non-tail recursion, bootstrapping, proof trees, unit testing, order of evaulation of expressions etc.",
-      "skills": "Teaching, Communication, Problem Solving, Functional Programming Language",
-      "duration": "Jan 2023 - May 2023",
-      "place": "Singapore"
-  }, 
   {
-      "company_name": "National University of Singapore",
-      "role": "Lead Student Data Archivist",
-      "description": "Adeptly curating, meticulously digitizing, and creating metadata for a diverse range of institutional records. My responsibilities extended to closely supervising the processing procedures, ensuring a seamless data transforma- tion flow. This contribution played a key role in preserving and meticulously organizing the college’s invaluable archival materials, fostering an environment of accessible knowledge and historical continuity. Wrote Python scripts to automate batch renaming for MacOS.",
-      "skills": "Leardership, Teamwork, Communication, Time Management, Python",
-      "duration": "Jan 2022 - Aug 2023",
-      "place": "Singapore"
-  }, 
+    "id": 1,
+    "company_name": "Yale-NUS College",
+    "role": "Summer Research Assistant",
+    "description": "Documented and improved functions of scobra python package under Prof. Maurice Cheung using Object Oriented Programming fundamentals.",
+    "skills": "Python, GitHub, Object Oriented Programming, Data Analysis, Data Visualization, Scientific Writing",
+    "duration": "May 2022 - Aug 2022",
+    "place": "Singapore"
+  },
   {
+    "id": 2,
+    "company_name": "YNC_Hacks",
+    "role": "Copresident",
+    "description": "Implemented semester-long software and hardware workshops and projects catering to different skill levels, increasing active membership by 200%. Co-organized the inaugural hackathon at the university, bringing together students from diverse majors.",
+    "skills": "Python, Problem solving, Leadership, Teamwork, Communication, Event Management",
+    "duration": "Jan 2022 - Aug 2023",
+    "place": "Singapore"
+  },
+  {
+    "id": 3,
+    "company_name": "Yale-NUS College",
+    "role": "Peer Tutor for Introduction to Computer Science",
+    "description": "Worked under Prof. Olivier Danvy to tutor students in the highly rigorous introduction to computer science class taught in a functional Programming language, OCaml. Hosted weekly open sessions and one-to-one tutorials to explain fundamental computing and programming concepts including tail and non-tail recursion, bootstrapping, proof trees, unit testing, order of evaluation of expressions etc.",
+    "skills": "Teaching, Communication, Problem Solving, Functional Programming Language",
+    "duration": "Jan 2023 - May 2023",
+    "place": "Singapore"
+  },
+  {
+    "id": 4,
+    "company_name": "National University of Singapore",
+    "role": "Lead Student Data Archivist",
+    "description": "Adeptly curating, meticulously digitizing, and creating metadata for a diverse range of institutional records. My responsibilities extended to closely supervising the processing procedures, ensuring a seamless data transformation flow. This contribution played a key role in preserving the college’s invaluable archival materials, fostering an environment of accessible knowledge and historical continuity. Wrote Python scripts to automate batch renaming for MacOS.",
+    "skills": "Leadership, Teamwork, Communication, Time Management, Python",
+    "duration": "Jan 2022 - Aug 2023",
+    "place": "Singapore"
+  },
+  {
+    "id": 5,
     "company_name": "Yale-NUS College",
     "role": "Fitness Student Associate",
     "description": "Orchestrated liaison between students and instructors for yoga, Zumba, and self-defense classes. Led fitness awareness campaigns and organized booths to promote wellness among students on campus.",
     "skills": "Teaching, Communication, Problem Solving, Functional Programming Language",
     "duration": "Jan 2023 - April 2023",
     "place": "Singapore"
-}
+  }
 ]

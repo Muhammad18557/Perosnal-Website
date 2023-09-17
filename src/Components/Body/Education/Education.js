@@ -1,21 +1,25 @@
 import React, { useEffect, useState } from 'react';
 import './Education.css';
 import SchoolCard from './SchoolCard/SchoolCard';
+import data from './education-data.json';
 
 function Education() {
   const [schoolData, setSchoolData] = useState([]);
 
-  useEffect(() => {
-    fetch('http://localhost:3000/api/education')
-      .then(response => response.json())
-      .then(data => setSchoolData(data))
-      .catch(error => console.error(error));
-  }, []);
+  // useEffect(() => {
+  //   fetch('http://localhost:3000/api/education')
+  //     .then(response => response.json())
+  //     .then(data => setSchoolData(data))
+  //     .catch(error => console.error(error));
+  // }, []);
 
-  const quoteData = {
-    quote: "\"Education is the most powerful weapon which you can use to change the world.\"",
-    author: "Nelson Mandela"
-  };
+  useEffect(() => {
+    setSchoolData(data);
+  }, []);
+  // const quoteData = {
+  //   quote: "\"Education is the most powerful weapon which you can use to change the world.\"",
+  //   author: "Nelson Mandela"
+  // };
 
   return (
     <div className='education-container'>  

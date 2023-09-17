@@ -38,9 +38,9 @@ function Home() {
       <div className='intro'>
         <h1 className='intro-heading'> {introText} {showCursor && <span className='typing-cursor'>|</span>}</h1>
         
-        <h2 className='intro-text'>I am a penultimate Computer Science major at Yale-NUS College of National University of Singapore, and currently spending a semester abroad at Yale University, USA. I am an asipiring software engineer and love trying out new technology stacks. Hit me up if you want to work on a project together from anywhere in the world.</h2>
-
-        <h2 className='skillset'>Skills/Stacks:  Python, C++, OCaml, JavaScript, Html, CSS, git, Machine Learning and Applications of Linear Algebra, Data Analysis, Data Structures and Algorithms, Object Oriented and Fuctional Porgramming.</h2>
+        <h2 className='intro-text'>I am a penultimate Computer Science major at Yale-NUS College of National University of Singapore, and currently doing a semester abroad at Yale University, USA. I am an asipiring software engineer and love trying out new technology stacks. Hit me up if you want to work on a project together from anywhere in the world.</h2>
+        
+        <h2 className='skillset'>Skills:  Python(Django), C++, JavaScript (React, Node.js), OCaml( functional programming), HTML5/CSS, SQL, R, Object Oriented Design Patterns, Git, GitHub</h2>
 
 
         <div className='resume-and-contact'>
@@ -54,7 +54,7 @@ function Home() {
                 <h1 className="label-resume">Resume</h1> </a>
             </div>
         </div>
-        <h2 className='skillset'> Interests: Swimming, Squash, Hiking, Cricket, Table Tennis. </h2>
+        <h2 className='skillset'> Interests: Swimming, Squash, Cricket, Hiking, Table Tennis. </h2>
         <div className='languages'>
               <i className='fas fa-language fa-xl language-name'></i>
               <div className='language-name'>English </div> 

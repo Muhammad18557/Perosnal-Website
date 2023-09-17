@@ -1,41 +1,46 @@
 [
-    {
-      "title": "eGROCERY Website",
-      "description": "Collaborated with four other software engineering students to develop an e-commerce web application that enables users to browse a catalogue of grocery items and purchase them. I primarily worked on the frontend using React, while the backend was implemented using Flask.",
-      "stacks": "React, Flask, MongoDB", 
-      "year": "2022", 
-      "code": "https://github.com/jakobnunnendorf/SE_egrocery", 
-      "link": "abc",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Solar_irradiance_and_temperature_1880-2018.jpeg" 
-
-    },
-    {
-      "title": "Auctions Web Application",
-      "description": "Built a web application to register users and allow them to post or bid for items for auctions entirely in Django.",
-      "stacks" : "Django, Html, CSS, SQLite", 
-      "year": "2022", 
-      "code": "abc", 
+  {
+      "id": 15,
+      "title": "eGROCERY Web Application (Full stack)",
+      "description": "Collaborated with four other software engineering students to develop a full stack e-commerce web application that enables users to browse a catalog of grocery items and purchase them. I primarily worked on the frontend using React, while the backend was implemented in Flask and MongoDB Database.",
+      "stacks": "React, Flask, MongoDB",
+      "year": 2023,
+      "rank": 1,
+      "code": "https://github.com/jakobnunnendorf/SE_egrocery",
       "link": "",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Solar_irradiance_and_temperature_1880-2018.jpeg" 
-
-    },
-    {
-      "title": "Master's Admissions Predictor",
-      "description": "Developed a machine learning model to predict the probability of admission for a student to a university based on their profile. The model was trained on a dataset of 500 students and achieved an accuracy of 90%.",
-      "stacks": "Python, Scikit-learn, Pandas, Numpy", 
-      "year": "2022", 
-      "code": "", 
-      "link": "abc",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Solar_irradiance_and_temperature_1880-2018.jpeg"
-    }, 
-    {
-        "title": "Single-Page Email Client Web Application",
-        "description": "Developed a machine learning model to predict the probability of admission for a student to a university based on their profile. The model was trained on a dataset of 500 students and achieved an accuracy of 90%.",
-        "stacks": "JavaScript, HTML, CSS, Django", 
-        "year": "2022", 
-        "code": "", 
-        "link": "abc",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Solar_irradiance_and_temperature_1880-2018.jpeg"
-      }
-  ]
-  
+      "image": "uploads/image-1692507524510-239443225"
+  },
+  {
+      "id": 16,
+      "title": "Auctions Web Application",
+      "description": "Developed a dynamic Django-powered web application for online auctions, featuring user registration, authentication, item posting, and bidding functionality. Utilized SQLite for streamlined storage and management of user and item data.",
+      "stacks": "Django, SQLite, HTML, CSS",
+      "year": 2022,
+      "rank": 2,
+      "code": "https://github.com/Muhammad18557/Auctions/",
+      "link": "",
+      "image": "uploads/image-1692507669923-462093955"
+  },
+  {
+      "id": 17,
+      "title": "Personal Website",
+      "description": "Developed a fully responsive full-stack portfolio website using React, Node.js, Express, and PostgreSQL. Designed an engaging user experience with dedicated pages for education, experience, and projects. Implemented a robust backend with seamless integration, enabling efficient data storage and retrieval.",
+      "stacks": "React, Node.js, Express, PostgreSQL",
+      "year": 2023,
+      "rank": 3,
+      "code": "https://github.com/Muhammad18557/Personal-Website",
+      "link": "",
+      "image": "uploads/image-1692507871227-412573473"
+  },
+  {
+      "id": 19,
+      "title": "Masters Admissions Predictor",
+      "description": "Leveraged web scraping techniques to obtain a comprehensive dataset comprising credentials of Masters applicants from American Universities. By utilizing logistic regression in Python, we collectively trained a robust model that forecasts application outcomes based on given credentials.",
+      "stacks": "Python (NumPy, Pandas, and Beautiful Soup)",
+      "year": 2022,
+      "rank": 4,
+      "code": "https://drive.google.com/file/d/1_v_M6D_8ffVRRXSNSf4N2lGY1nC7oD61/view",
+      "link": "https://drive.google.com/file/d/1_v_M6D_8ffVRRXSNSf4N2lGY1nC7oD61/view",
+      "image": "uploads/image-1692508220725-948057273"
+  }
+]
