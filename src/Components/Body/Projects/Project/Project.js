@@ -1,12 +1,17 @@
 import React from 'react';
 import './Project.css';
+import egrocery from '../projectImages/egrocery.jpeg';
+import auctions from '../projectImages/auctions.jpeg';
+import portfolio from '../projectImages/pw.jpeg';
+import masters from '../projectImages/masters.jpeg';
 
 function Project(props) {
+  const images = [egrocery, auctions, portfolio, masters]
   return (
     <div className='project-card-container'>
       <div className='company-logo-container'>
         <img
-          src={`http://localhost:3000/${props.image}`}
+          src={ images[props.id] }
           alt='company logo'
           className='company-logo'
           href={props.link ? props.link : props.code}
