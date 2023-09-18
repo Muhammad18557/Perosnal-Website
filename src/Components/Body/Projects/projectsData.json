@@ -2,7 +2,7 @@
   {
       "id": 0,
       "title": "eGROCERY Web Application (Full stack)",
-      "description": "Collaborated with four other software engineering students to develop a full stack e-commerce web application that enables users to browse a catalog of grocery items and purchase them. I primarily worked on the frontend using React, while the backend was implemented in Flask and MongoDB Database.",
+      "description": "Collaborated with four other software engineering students to develop a full stack e-commerce web application that enables users to browse a catalog of grocery items and purchase them with dedicated pages for help and support, user profile, order history and cart management.",
       "stacks": "React, Flask, MongoDB",
       "year": 2023,
       "rank": 1,
@@ -24,7 +24,7 @@
   {
       "id": 2,
       "title": "Personal Website",
-      "description": "Developed a fully responsive full-stack portfolio website using React, Node.js, Express, and PostgreSQL. Designed an engaging user experience with dedicated pages for education, experience, and projects. Implemented a robust backend with seamless integration, enabling efficient data storage and retrieval.",
+      "description": "Developed a fully responsive full-stack portfolio website using React, Node.js, Express, and PostgreSQL. Designed an engaging user experience with dedicated pages for education, experience, and projects. Implemented a robust backend with visual CRUD, enabling efficient data management from the frontend.",
       "stacks": "React, Node.js, Express, PostgreSQL",
       "year": 2023,
       "rank": 3,
